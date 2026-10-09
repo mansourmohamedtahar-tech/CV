@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CV - Mansour Mohamed Tahar</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+    display: block;
+    margin: 0 auto 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #eef1f5;
+    color: #2c3e50;
+    line-height: 1.5;
+  }
+  .cv {
+    max-width: 850px;
+    margin: 30px auto;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 32% 68%;
+    min-height: 1100px;
+  }
+  /* Colonne gauche */
+  .left {
+    background: #1f2d3d;
+    color: #ecf0f1;
+    padding: 30px 22px;
+  }
+  .left h1 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .left .title {
+    font-size: 13px;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .left h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #3498db;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 6px;
+    margin: 22px 0 12px;
+    letter-spacing: 1px;
+  }
+  .left p, .left li {
+    font-size: 12.5px;
+    margin-bottom: 6px;
+  }
+  .left ul { list-style: none; }
+  .left ul li::before {
+    content: "▸ ";
+    color: #3498db;
+  }
+  .contact a {
+    color: #ecf0f1;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .contact a:hover { color: #3498db; }
+
+  /* Colonne droite */
+  .right {
+    padding: 35px 30px;
+  }
+  .right h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #1f2d3d;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  .right section { margin-bottom: 22px; }
+  .item { margin-bottom: 14px; }
+  .item .head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #1f2d3d;
+    font-size: 13.5px;
+  }
+  .item .sub {
+    font-size: 15px;
+    color: #7f8c8d;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .item ul {
+    margin-left: 16px;
+    font-size: 12.5px;
+  }
+  .item ul li { margin-bottom: 3px; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 12.5px;
+  }
+  .skills-grid strong { color: #1f2d3d; }
+  .profil {
+    font-size: 13px;
+    text-align: justify;
+    color: #34495e;
+  }
+  @media print {
+    body { background: #fff; }
+    .cv { box-shadow: none; margin: 0; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="cv">
+
+  <!-- ===== COLONNE GAUCHE ===== -->
+    <aside class="left">
+    <img src="photo.jpg" alt="Photo de profil" class="photo">
+    <h1>Mansour<br>Mohamed Tahar</h1>
+    <div class="title">Développeur Web</div>
+
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>📍 Alger, Staoueli</p>
+      <p>📞 0791 57 87 70</p>
+      <p>✉️ <a href="mailto:mansourmohamedtahar@gmail.com">mansourmohamedtahar@gmail.com</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/mohamed-tahar-mansour-50865b3b3/">LinkedIn</a></p>
+      <p>💻 <a href="https://github.com/mansourmohamedtahar-tech">GitHub</a></p>
+      <p>🌐 <a href="https://mansourmohamedtahar-tech.github.io/portfolio/">Portfolio</a></p>
+    </div>
+
+    <h2>Compétences</h2>
+    <ul>
+      <li><strong>Langages :</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Frameworks :</strong> Express.js, React.js</li>
+      <li><strong>Bases de données :</strong> SQL Oracle, MongoDB</li>
+      <li><strong>Outils :</strong> VS Code, UML, GitHub</li>
+    </ul>
+
+    <h2>Langues</h2>
+    <ul>
+      <li>Arabe — C2 (natif)</li>
+      <li>Français — B2</li>
+      <li>Anglais — B1</li>
+    </ul>
+  </aside>
+
+  <!-- ===== COLONNE DROITE ===== -->
+  <main class="right">
+
+    <section>
+      <h2>Profil</h2>
+      <p class="profil">
+        Étudiant en Master Big Data à l'USTHB, passionné par le développement web et les nouvelles technologies.
+        À la recherche d'un emploi de développeur afin de mettre en pratique mes compétences techniques et
+        de contribuer à des projets innovants au sein d'une équipe dynamique.
+      </p>
+    </section>
+
+    <section>
+      <h2>Formation</h2>
+      <div class="item">
+        <div class="head">
+          <span>Master Big Data</span>
+          <span>2026 – en cours</span>
+        </div>
+        <div class="sub">USTHB — Université des Sciences et de la Technologie Houari Boumediene, Alger</div>
+      </div>
+      <div class="item">
+        <div class="head">
+          <span>Licence Informatique</span>
+          <span>2023 – 2026</span>
+        </div>
+        <div class="sub">USTHB — Alger</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Expériences & Stages</h2>
+      <div class="item">
+        <div class="head">
+          <span>Stagiaire — Projet de fin d'étude</span>
+          <span>3 mois</span>
+        </div>
+        <div class="sub">SODISMAC</div>
+        <ul>
+          <li>Participation au développement d'une application dans le cadre du projet de fin d'étude.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="head">
+          <span>Stagiaire — Développement Web & Applications</span>
+          <span>15 jours</span>
+        </div>
+        <div class="sub">GICA</div>
+        <ul>
+          <li>Découverte du développement d'applications et de sites web en milieu industriel.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="head">
+          <span> Caissier</span>
+          <span>Juin – Août</span>
+        </div>
+        <div class="sub">Supérette</div>
+        <ul>
+          <li>Gestion de caisse.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projets</h2>
+      <div class="item">
+        <div class="head">
+          <span>Gestion de Scolarité</span>
+          <span>Flask · Vue.js</span>
+        </div>
+        <ul>
+          <li>Application web de gestion des étudiants, notes et inscriptions.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="head">
+          <span>Gestion Commerciale et Fiscale</span>
+          <span>HTML · CSS · Django</span>
+        </div>
+        <ul>
+          <li>Application de gestion des ventes, factures et obligations fiscales.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</div>
+</body>
+</html>
